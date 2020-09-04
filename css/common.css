@@ -2,12 +2,14 @@
 Цвет h2-h3 color: #212121;
 Цвет text color: #757575;
 Цвет link color: #2196f3;
-Цвет hero and footer color: #2F303A */
+Цвет hero and footer color: #2F303A 
+Цвет иконок: #AFB1B8;*/
 
 :root {
   --primary-black-color: #212121;
   --primary-white-color: #ffffff;
   --link-color: #2196f3;
+  --icon-color: #AFB1B8;
 }
 
 /* 
@@ -83,13 +85,22 @@ img {
 
 /* Footer */
 footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
   background-color: #2f303a;
   font-family: Roboto, sans-serif;
   font-weight: 400;
   letter-spacing: 0.03em;
+}
+
+.content-box {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  display: flex;
+  align-items: baseline;
+}
+
+.address-box {
+margin-right: 70px;
 }
 
 .adds {
@@ -101,7 +112,8 @@ footer {
 }
 
 .adds-text {
-margin-bottom: 9px;
+  margin-top: 0;
+  margin-bottom: 9px;
 }
 
 .auth-footer {
@@ -110,6 +122,52 @@ margin-bottom: 9px;
   line-height: 1.7;
   text-decoration: none;
   font-style: normal;
+}
+
+.follow-title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700px;
+  font-size: 14px;
+  line-height: 1.7;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.follow-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.follow-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.follow-link.join {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-white-color);
+}
+
+.follow-link:hover,
+.follow-link:focus {
+  background-color: var(--link-color);
+}
+
+.follow-item {
+  margin-right: 10px;
+}
+
+.follow-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
 }
 
 /* Лого */
@@ -132,13 +190,14 @@ margin-bottom: 9px;
   font-size: 26px;
 }
 
-.accent-footer {
+.accent.inverse {
   color: var(--primary-white-color);
   font-family: "Raleway", sans-serif;
   font-size: 26px;
 }
 
 .content-box .logo {
+  margin-right: 0;
   margin-bottom: 20px;
 }
 
@@ -147,6 +206,11 @@ margin-bottom: 9px;
 .main-nav {
   display: flex;
   margin-right: auto;
+}
+
+.menu-item .link {
+display: inline-flex;
+
 }
 
 .menu-item:not(:last-child) {
@@ -181,4 +245,9 @@ margin-bottom: 9px;
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--link-color);
+}
+
+.auth-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
