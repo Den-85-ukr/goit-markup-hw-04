@@ -6,7 +6,21 @@
 
 /* Hero */
 .hero {
-  background-color: #2f303a;
+  height: 600px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bcg-mini.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-color: #c4c4c4;
 }
 
 .hero-content {
@@ -34,7 +48,7 @@
 
 .button {
   padding: 10px 32px;
-  
+
   color: var(--primary-white-color);
   background-color: #2196f3;
   font-weight: 700;
@@ -124,7 +138,7 @@
 .team {
   padding-top: 94px;
 
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 
 .team-list {
@@ -164,9 +178,43 @@
   line-height: 1.19;
   text-align: center;
 }
+
 .team .biz {
   color: #757575;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+/* Постоянные клиенты */
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clients-item {
+  width: 170px;
+  height: 90px;
+  margin-right: 30px;
+  padding: 0;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-logo {
+  fill: #afb1b8;
+}
+
+.clients-item:hover {
+  border: 1px solid var(--link-color);
+}
+.clients-item:hover .clients-logo {
+  color: var(--link-color);
 }
